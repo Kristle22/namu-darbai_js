@@ -123,3 +123,18 @@ if (visiMetai.includes(metai)) {
 
 // 10.
 
+let val1 = 8;
+let min1 = 29;
+let kelMin =43;
+
+let valPam = 9;
+let minPam = 5;
+
+let minLaikas = (valPam * 60 + minPam) - (val1 * 60 + min1);
+
+if (minLaikas < kelMin) {
+    console.log('Petras i pamoka paveluos.');
+} else {
+    console.log('Petras i pamoka NEpaveluos.');
+}
+
