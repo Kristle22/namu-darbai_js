@@ -69,3 +69,57 @@ if ( deg % 3 === 0) {
 } else {
     console.log('Trikampio sudelioti negalima');
 }
+
+// 7.
+
+let dienuSk = [28, 30, 31];
+let menNr = 5;
+
+if (menNr === 2) {
+    dienuSk = dienuSk[0];
+} else if (menNr === 4 || menNr === 6 || menNr === 9 || menNr === 11){
+    dienuSk = dienuSk[1];
+} else {
+    dienuSk = dienuSk[2];
+}
+console.log(`Sio menesio dienu skaicius yra ${dienuSk}.`);
+
+// 8.
+
+let kauliukas = 1;
+let uzrasas
+switch(kauliukas) {
+    case 1:
+    case 3:
+    case 5:
+        uzrasas = 'Kambari tvarkys jaunelis';
+        break;
+    case 2:
+    case 4:
+    case 6:
+        uzrasas = 'Kambari tvarkys vyresnelis';
+}
+console.log(uzrasas);
+
+// 9.
+
+let visiMetai = []; 
+let zaidSk = Math.floor((2022 -1896)/ 4);
+
+let metai = 1905;
+
+let olimpMetai = 1896;
+for (let i = 0; i < zaidSk + 1; i++ ) {
+    visiMetai.push(olimpMetai);
+    olimpMetai += 4;
+}
+let zaidNr = visiMetai.indexOf(metai) +1;
+
+if (visiMetai.includes(metai)) {
+    console.log(`Siems olimpiniams metams yra suteiktas ${zaidNr} numeris.`);
+} else {
+    console.log('Metai neolimpiniai.');
+}
+
+// 10.
+

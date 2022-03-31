@@ -3,44 +3,45 @@
 
 const age1 = 29;
 const age2 = 39;
+const age3 = 19;
 
 if (age1 > age2) {
-    console.log("Pomidoras");
+    console.log("(a)Pomidoras");
 } else {
-    console.log("Bandykite kita karta.");
+    console.log("(a)Bandykite kita karta.");
 }
 // 1. b) 
-if (age1 < age2) {
-    console.log("Pomidoras");
+if (age2 < age3) {
+    console.log("(b)Pomidoras");
 } else {
-    console.log("bandykite kita karta.");
+    console.log("(b)bandykite kita karta.");
 }
 //  1. c)
-if (age1 === age2) {
-    console.log("Pomidoras");
+if (age1 === age3) {
+    console.log("(c)Pomidoras");
 } else {
-    console.log("Bandykite kita karta.");
+    console.log("(c)Bandykite kita karta.");
 }
 
 // 1. d)
 if (age1 !== age2) {
-    console.log("Pomidoras");
+    console.log("(d)Pomidoras");
 } else {
-    console.log("Bandykite kita karta.");
+    console.log("(d)Bandykite kita karta.");
 }
 
 // 1. e)
-if (age1 >= age2) { 
-    console.log("Pomidoras");
+if (age2 >= age1) { 
+    console.log("(e)Pomidoras");
 } else {
-    console.log("Bandykite kita karta.");
+    console.log("(e)Bandykite kita karta.");
 }
 
 // 1. f)
 if (age1 <= age2) {
-    console.log("Pomidoras");
+    console.log("(f)Pomidoras");
 } else {
-    console.log("Bandykite kita karta.");
+    console.log("(f)Bandykite kita karta.");
 }
 
 // 2.
