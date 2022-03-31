@@ -36,18 +36,20 @@ if (kn / dz <= 5) {
 
 // 4.
 
-let a = 29;
+let a = 89;
 let b = 39;
 
 if (a > b) {
     a--;
     b++;
-} else {
+    console.log(`Skaicius a = ${a}, skaicius b = ${b}`);
+} else if (b > a) {
     a++;
     b--;
-}
-console.log(`Skaicius a = ${a}, skaicius b = ${b}`);
-
+    console.log(`Skaicius a = ${a}, skaicius b = ${b}`);
+} else {
+        console.log(`Skaiciu a ir b vertes yra lygios ${a}`)
+    }
 // 5.
 
 let cnt = 50;
@@ -70,7 +72,7 @@ if ( deg % 3 === 0) {
     console.log('Trikampio sudelioti negalima');
 }
 
-// 7.
+// 7. I
 
 let dienuSk = [28, 30, 31];
 let menNr = 5;
@@ -84,7 +86,29 @@ if (menNr === 2) {
 }
 console.log(`Sio menesio dienu skaicius yra ${dienuSk}.`);
 
-// 8.
+// 7. II
+
+let men = 5;
+let met = 2022;
+
+const data = new Date(met, men, 0);
+const dienSk = data.getDate();
+
+console.log(`${met} metu ${men} menesio dienu skaicius: ${dienSk} d.`);
+
+// 7. III
+let menNr1 = 5;
+
+if (menNr1 === 2) {
+    console.log(`${menNr1} menuo turi 28 dienas.`);  
+} 
+else if (menNr1 < 7 && menNr1 % 2 === 0 || menNr1 > 8 && menNr1 % 2 !== 0) {
+    console.log(`${menNr1} menuo turi 30 dienu.`);  
+} else {
+  console.log(`${menNr1} menuo turi 31 diena.`);   
+}
+
+// 8. I
 
 let kauliukas = 1;
 let uzrasas
@@ -100,8 +124,17 @@ switch(kauliukas) {
         uzrasas = 'Kambari tvarkys vyresnelis';
 }
 console.log(uzrasas);
+// 8. II
 
-// 9.
+let kauliukas1 = 1;
+
+if (kauliukas1 % 2 === 0) {
+    console.log('Kambari tvarkys vyresnelis');
+} else {
+    console.log('Kambari tvarkys jaunelis'); 
+}
+
+// 9. I
 
 let visiMetai = []; 
 let zaidSk = Math.floor((2022 -1896)/ 4);
@@ -119,6 +152,17 @@ if (visiMetai.includes(metai)) {
     console.log(`Siems olimpiniams metams yra suteiktas ${zaidNr} numeris.`);
 } else {
     console.log('Metai neolimpiniai.');
+}
+
+// 9. II
+
+let zaidMetai = 1904;
+let olimpNr = zaidMetai / 4 - 473; 
+
+if (zaidMetai % 4 === 0) {
+    console.log(`${zaidMetai} olimpinems zaidynems priskirtas ${olimpNr} numeris.`); 
+} else {
+    console.log('Metai NEolimpiniai.');
 }
 
 // 10.
