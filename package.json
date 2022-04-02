@@ -4,8 +4,7 @@
   "description": "namu-darbai",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon .03-31.js",
-    "dev1": "nodemon .index.js",
+    "dev": "nodemon ./namu-darbai/04-01.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

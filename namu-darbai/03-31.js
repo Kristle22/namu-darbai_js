@@ -181,4 +181,3 @@ if (minLaikas < kelMin) {
 } else {
     console.log('Petras i pamoka NEpaveluos.');
 }
-
