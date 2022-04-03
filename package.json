@@ -4,7 +4,8 @@
   "description": "namu-darbai",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./namu-darbai/04-01.js",
+    "server": "dead-server --port=3000 --host=localhost",
+    "dev": "nodemon ./namu-darbai/04-03.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
