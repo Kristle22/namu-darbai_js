@@ -24,7 +24,7 @@ for (let i = 0; i < 41; i+=10) {
 // 4.
 console.log('4)---------------------------');
 
-for (let i = 49; i <54; i++) {
+for (let i = 49; i < 54; i++) {
     console.log(i);
 }
 

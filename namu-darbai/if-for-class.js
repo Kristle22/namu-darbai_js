@@ -158,8 +158,27 @@ for (let i = phrLen - 1; i >= 0; i--) {
 } 
 console.log(text);
 
-// 3. a) 0 - 11 (kiek skaiciu dalijasi be liekanos is I. 3, II. 5 ir  III. 7)
-// I.
+// 3. a) 0 - 11 /b) 8 - 31 /c) -18 - 18 (kiek skaiciu dalijasi be liekanos is 3, 5 ir 7)
+
+let startAt = -18;
+let endAt = 18;
+
+let numFrom3 = [];
+let numFrom5 = [];
+let numFrom7 = [];
+
+for(let i = startAt; i < endAt; i++) {
+    if (i % 3 === 0) { numFrom3.push(i) };  
+    if (i % 5 === 0) { numFrom5.push(i) };
+    if (i % 7 === 0) { numFrom7.push(i) };
+}
+console.log('----------------------------------------------');
+console.log(`Skaiciu intervale tarp ${startAt} ir ${endAt}, besidalijanciu be liekanos is 3 yra ${numFrom3.length} vienetai: ${numFrom3}`);
+console.log('----------------------------------------------');
+console.log(`Skaiciu intervale tarp ${startAt} ir ${endAt}, besidalijanciu be liekanos is 5 yra ${numFrom5.length} vienetai: ${numFrom5}`);
+console.log('----------------------------------------------');
+console.log(`Skaiciu intervale tarp ${startAt} ir ${endAt}, besidalijanciu be liekanos is 7 yra ${numFrom7.length} vienetai: ${numFrom7}`);
+console.log('----------------------------------------------');
 
 
 
