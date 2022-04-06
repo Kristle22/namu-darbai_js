@@ -1,11 +1,8 @@
 // 1.
 console.log('1)---------------------------');
 
-const hey = "Labas!";
-let txt = "";
-for (let i = 0; i < 5; i++) {
-  txt += hey;  
-  console.log(hey);
+for (let i = 0; i < 5; i++) { 
+  console.log("Labas!");
 }
 
 // 2.
@@ -33,8 +30,7 @@ console.log('5)---------------------------');
 
 let randNr;
 for (let i = 0; i < 5; i++) {
-    randNr = Math.floor(Math.random() * 11);
-       console.log(randNr);
+    console.log(Math.floor(Math.random() * 11));
 }
 
 // 6.
@@ -87,3 +83,4 @@ for (let i = pirmiKeliamieji; i < laikasIki  + 1; i+=4) {
    if (i % 100 === 0 && i % 400 !== 0) { continue; };
     console.log(i);
 }
+
