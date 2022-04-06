@@ -37,12 +37,12 @@ console.log(`Tadas vidutiniskai per diena perskaite ${vid} skyr.`);
 // 4.
 console.log('4)---------------------------');
 
-// let skaicius = 5;
-// let i = 0;
-// while (i !== skaicius) {
-//     i = Math.floor(Math.random() * 11);
-//     console.log(i);
-// }
+let skaicius = 5;
+let i = 0;
+while (i !== skaicius) {
+    i = Math.floor(Math.random() * 11);
+    console.log(i);
+}
 
 // 5.
 console.log('5)---------------------------');
@@ -50,7 +50,11 @@ console.log('5)---------------------------');
 let skaicius1 = 5;
 let skaicius2 = 7;
 let itr = 0;
+let ciklai = "";
 while(itr !== skaicius1 && itr !== skaicius2) {
     itr = Math.floor(Math.random() * 11);
-    console.log(itr);
+    console.log(itr); 
+    ciklai += itr + ',';
 }
+cikluSk = ciklai.split(',').length - 1;
+console.log(`Ciklas prasisuko ${cikluSk} kartu.`);
