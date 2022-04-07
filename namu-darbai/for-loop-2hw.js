@@ -56,10 +56,10 @@ for (let i = 1; i < 11; i++) {
 console.log('8)---------------------------');
 
 let inchList = 10;
-let inchIncm;
+let inchInCm;
 for (let i = 1; i < inchList + 1; i++) {
-    inchIncm = i * 2.54;
-    console.log(`${i} col. yra ${inchIncm} cm.`);
+    inchInCm = i * 2.54;
+    console.log(`${i} col. yra ${inchInCm} cm.`);
 }
 
 // 9.
