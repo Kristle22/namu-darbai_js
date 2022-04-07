@@ -12,9 +12,10 @@ console.log(sum);
 // 2.
 console.log('2)---------------------------');
 
-let suma = 1;
-while (suma % 7) {
-    let random = Math.floor(Math.random() * 10) + 1;
+let suma = 0;
+let random = 0;
+while (suma % 7 === 0) {
+    random = Math.floor(Math.random() * 10) + 1;
     suma += random;
 } 
 console.log(suma);
@@ -45,7 +46,7 @@ while (i !== skaicius) {
 }
 
 // 5.
-console.log('5)---------------------------');
+console.log('5) a)---------------------------');
 
 let skaicius1 = 5;
 let skaicius2 = 7;
@@ -58,3 +59,14 @@ while(itr !== skaicius1 && itr !== skaicius2) {
 }
 cikluSk = ciklai.split(',').length - 1;
 console.log(`Ciklas prasisuko ${cikluSk} kartu.`);
+
+// 5.
+console.log('5) b)---------------------------');
+let itrRand = 0;
+ciklai = 0;
+while (itrRand !== 5 && itrRand !== 7) {
+    itrRand = Math.floor(Math.random() * 11);
+    console.log(itrRand);
+    ciklai++;
+}
+console.log(`Ciklas prasisuko ${ciklai} kartu.`);
