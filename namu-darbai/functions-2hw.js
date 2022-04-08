@@ -48,6 +48,9 @@ console.log(kvadratas(7));
 console.log('5)---------------------------');
 
 function skaiciuSuma (skaicius) {
+    if (skaicius <= 1) {
+        console.log('Skaicius turi buti didesnis uz vieneta.')
+    }
     let sum = 0;
     for (i = 1; i < skaicius +1; i++) {
         sum += i;
@@ -67,9 +70,9 @@ function skaiciuKiekis (skaicius) {
             sveikiSkaiciai.push(i);
         }
     }
+
     console.log(`Is ${skaicius} dalijasi ${sveikiSkaiciai.length} sveiki skaiciai: ${sveikiSkaiciai}`); 
 }
-
 skaiciuKiekis(70);
 
 // 7.
@@ -91,16 +94,16 @@ console.log('8)---------------------------');
 
 function telefonoNumeris (numeris) {
 
-    if (typeof(numeris) !== 'number' || numeris === '') {
+    if (typeof(numeris) !== 'number' || !isFinite(numeris)) {
         console.log('Prasau iveskite tiktai skaitmenis.');
     }
     if (typeof(numeris) !== 'string') {
         numeris = numeris.toString();
     }
-    if (numeris.length === 10) {
+    if (numeris.length < 10 || numeris.length > 10) {
+        console.log('Numeris privalo tureti 10 skaitmenu.');
+    } else {
         console.log(numeris.replace(/(\d{3})(\d{3})(\d{4})/, '($1)$2-$3'));
-    } else if (numeris < 10 || numeris > 10) {
-        console.log('Iveskite 10 skaitmenu numeri.');
     }
 }
 
@@ -135,3 +138,18 @@ function raidesA (tekstas) {
 }
 
 console.log(raidesA('Labas rytas! Sako tau kavos puodukas!'));
+
+console.log('6) tobulesnis variantas---------------------->');
+
+function skaiciuKiekis (skaicius) {
+    let skaiciai = '';
+    let ciklai = 0;
+    for (i = 2; i < skaicius; i++) {
+        if (skaicius % i === 0 ) {
+        skaiciai += i + ', ';
+        ciklai++
+        }
+    }
+    console.log(`Is ${skaicius} dalijasi ${ciklai} sveiki skaiciai: ${skaiciai}`); 
+}
+skaiciuKiekis(70);

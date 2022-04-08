@@ -73,7 +73,7 @@ if ( deg % 3 === 0) {
 }
 
 // 7. I
-
+console.log('7) I.-----------------------')
 let dienuSk = [28, 30, 31];
 let menNr = 5;
 
@@ -87,7 +87,7 @@ if (menNr === 2) {
 console.log(`Sio menesio dienu skaicius yra ${dienuSk}.`);
 
 // 7. II
-
+console.log('7) II.-----------------------')
 let men = 5;
 let met = 2022;
 
@@ -97,8 +97,9 @@ const dienSk = data.getDate();
 console.log(`${met} metu ${men} menesio dienu skaicius: ${dienSk} d.`);
 
 // 7. III
-let menNr1 = 5;
+console.log('7) III.-----------------------')
 
+let menNr1 = 5;
 if (menNr1 === 2) {
     console.log(`${menNr1} menuo turi 28 dienas.`);  
 } 
@@ -135,11 +136,12 @@ if (kauliukas1 % 2 === 0) {
 }
 
 // 9. I
+console.log('9) I.-----------------------')
 
 let visiMetai = []; 
 let zaidSk = Math.floor((2022 -1896)/ 4);
 
-let metai = 1905;
+let metai = 2005;
 
 let olimpMetai = 1896;
 for (let i = 0; i < zaidSk + 1; i++ ) {
@@ -155,6 +157,7 @@ if (visiMetai.includes(metai)) {
 }
 
 // 9. II
+console.log('9) II.-----------------------')
 
 let zaidMetai = 1904;
 let olimpNr = zaidMetai / 4 - 473; 
@@ -164,6 +167,18 @@ if (zaidMetai % 4 === 0) {
 } else {
     console.log('Metai NEolimpiniai.');
 }
+
+// 9. III
+console.log('9) III.-----------------------')
+let pirmZaid = 1896;
+let olimpMet = 1912;
+let NrOlimp = (olimpMet - pirmZaid) / 4 +1;
+if (olimpMet % 4 === 0) {
+    console.log(`Sie metai olimpiniai, zaidyniu numeris: ${NrOlimp}.`);
+} else {
+    console.log('Sie metai neolimpiniai.');
+}
+
 
 // 10.
 
