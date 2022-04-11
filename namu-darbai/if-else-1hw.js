@@ -196,3 +196,64 @@ if (minLaikas < kelMin) {
 } else {
     console.log('Petras i pamoka NEpaveluos.');
 }
+
+console.log('TESTO UZDAVINYS (lygine suma)------------------------------------------')
+
+function lygineSuma (a, b){
+    if (typeof a === 'number' && typeof b === 'number'){
+        let suma = a + b;
+        if (suma % 2 === 0){
+            return `Skaičių a ir b suma yra: ${suma}`;
+        } else {
+            return 'Skaičių suma nelyginė';
+        }
+    } else if (Array.isArray(a) && Array.isArray(b)){
+        let suma = a.length + b.length;
+        if (suma % 2 === 0){
+            return `Masyvų  a ir b ilgių suma yra: ${suma}`;
+        } else {
+            return 'Masyvų ilgių suma nelyginė';
+        }
+    } else {
+        return 'Pateikti neteisingi kintamieji';
+    }
+}
+
+console.log(lygineSuma(2,8));
+console.log(lygineSuma(2,7));
+console.log(lygineSuma('2',8));
+console.log(lygineSuma([2],8));
+console.log(lygineSuma([2],[8]));
+console.log(lygineSuma([2],[8, 1, '456', '1']));
+
+console.log('TESTO UZDAVINYS (pirminis skaicius)------------------------------------------')
+
+function pirminisSkaicius(a) {
+    if (typeof a !== 'number') {
+        return 'Pateiktas kintamasis nėra skaičius';
+    }
+    let count = 0;
+    for (let i = 1; i <= a; i++){
+        if (a % i === 0) {
+            count++;
+        }
+    }
+    if (count < 2) {
+        return 'Įvestas blogas skaičius';
+    }
+    if (count === 2) {
+        return 'Įvestas skaičius yra pirminis';
+    }
+    if (count > 2) {
+        return 'Įvestas skaičius yra sudėtinis';
+    }
+}
+
+console.log(pirminisSkaicius('asdf'));
+console.log(pirminisSkaicius([4,4,'sdf']));
+console.log(pirminisSkaicius(0));
+console.log(pirminisSkaicius(1));
+console.log(pirminisSkaicius(2));
+console.log(pirminisSkaicius(3));
+console.log(pirminisSkaicius(15));
+console.log(pirminisSkaicius(17));

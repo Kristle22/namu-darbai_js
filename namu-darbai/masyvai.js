@@ -32,6 +32,23 @@ for (let i = 0; i < masIlgis; i++) {
 console.log(masyvas3);
 console.log(`Didziausias skaicius masyve yra ${maxNumber}`);
 
+console.log('3)PAVYZDINIS VARIANTAS------------------------')
+
+let masyvass = [];
+let max = 9;
+
+for (let i = 0; i < rand(20,30); i++) {
+    masyvass.push(rand(10, 30));
+}
+console.log(masyvass);
+
+for (let i = 0; i < masyvass.length; i++){
+    if (masyvass[i] > max){
+        max = masyvass[i];
+    }
+}
+console.log('max: ' + max);
+
 // 4.
 console.log('4)------------------------')
 
@@ -68,6 +85,40 @@ for (i = 0; i < 100; i++) {
 }
 console.log(masyvas5);
 console.log(`Siame masyve raidziu 'M': ${countM}, 'N': ${countN}, 'O': ${countO}, 'P': ${countP}.`);
+
+console.log('5)PAVYZDINIS VARIANTAS------------------------')
+
+const raidess = ['A', 'B', 'C', 'D'];
+
+const masyvas7 = [];
+
+for (let i = 0; i < 100; i++) {
+    masyvas7.push(raidess[rand(0,3)]);
+}
+
+console.log(masyvas7);
+
+let countA = 0;
+let countB = 0;
+let countC = 0;
+let countD = 0;
+
+for (let i = 0; i < masyvas7.length; i++) {
+    if (masyvas7[i] === 'A'){
+        countA++;
+    }
+    if (masyvas7[i] === 'B'){
+        countB++;
+    }
+    if (masyvas7[i] === 'C'){
+        countC++;
+    }
+    if (masyvas7[i] === 'D'){
+        countD++;
+    }
+}
+
+console.log(`Raidžių masyve yra: A: ${countA}, B: ${countB}, C: ${countC}, D: ${countD}`);
 
 // 6.
 console.log('6)------------------------')

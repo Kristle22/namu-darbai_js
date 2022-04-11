@@ -109,6 +109,31 @@ function telefonoNumeris (numeris) {
 
 telefonoNumeris(1234567890);
 
+console.log('8)PAVYZDINIS VARIANTAS---------------------------');
+
+function telefonoNumeris(a){
+    if (!Array.isArray(a)) {
+        return 'Kintamasis nėra masyvas';
+    }
+    if (a.length !== 10) {
+        return 'Masyvas yra netinkamo ilgio';
+    }
+    for (let i = 0; i < 10; i++) {
+        if ( typeof a[i] !== 'number') {
+            return 'Masyvo reikšmės turi būti skaičiai';
+        }
+    }
+    return `(${a[0]}${a[1]}${a[2]}) ${a[3]}${a[4]}${a[5]}-${a[6]}${a[7]}${a[8]}${a[9]}`;
+}
+
+console.log('1)', telefonoNumeris(17));
+console.log('2)', telefonoNumeris('asdasd'));
+console.log('3)', telefonoNumeris([9,5,8,6,5,4,7,1,2]));
+console.log('4)', telefonoNumeris([9,5,8,6,5,4,7,1,2,1,8]));
+console.log('5)', telefonoNumeris([9,5,8,6,5,4,'7',1,2,1,8]));
+console.log('6)', telefonoNumeris([9,5,8,6,5,4,'7',1,2,1]));
+console.log('7)', telefonoNumeris([9,5,8,6,5,4,7,1,2,1]));
+
 // 9.
 console.log('9)---------------------------');
 

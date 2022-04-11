@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "dead-server --port=3000 --host=localhost",
-    "dev": "nodemon ./namu-darbai/masyvai.js",
+    "dev": "nodemon ./namu-darbai/functions-2hw.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
